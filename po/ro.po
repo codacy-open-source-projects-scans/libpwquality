@@ -1,53 +1,50 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR libpwquality project
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Translators:
-# eukim <eukim@redhat.com>, 2007,2009
-# Tomáš Mráz <tmraz@fedoraproject.org>, 2017. #zanata
-# simmon <simmon@nplob.com>, 2021.
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2021.
-# 김인수 <simmon@nplob.com>, 2022, 2023.
+# This file is distributed under the same license as the libpwquality package.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: PWQuality library\n"
+"Project-Id-Version: libpwquality 1.4.5\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/libpwquality\n"
 "POT-Creation-Date: 2022-11-18 11:22+0100\n"
-"PO-Revision-Date: 2023-05-18 18:20+0000\n"
-"Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
-"libpwquality/app/ko/>\n"
-"Language: ko\n"
+"PO-Revision-Date: 2023-04-10 17:20+0000\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
+"libpwquality/app/ro/>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #: src/pam_pwquality.c:244
 #, c-format
 msgid "BAD PASSWORD: %s"
-msgstr "잘못된 비밀번호: %s"
+msgstr "PAROLĂ INCORECTĂ: %s"
 
 #: src/pwscore.c:22
 #, c-format
 msgid "Usage: %s [user]\n"
-msgstr "사용법: %s [<사용자>]\n"
+msgstr "Utilizare: %s [utilizator]\n"
 
 #: src/pwscore.c:23
 #, c-format
 msgid ""
 "       The command reads the password to be scored from the standard input.\n"
-msgstr "       이 명령은 표준 입력에서 수준을 검사할 비밀번호를 읽습니다.\n"
+msgstr ""
+"       Comanda citește parola care urmează să fie evaluată de la intrarea "
+"standard.\n"
 
 #: src/pwscore.c:53 src/pwscore.c:61 src/pwscore.c:67
 #, c-format
 msgid "Error: %s\n"
-msgstr "오류: %s\n"
+msgstr "Eroare: %s\n"
 
 #: src/pwscore.c:53
 msgid "Could not obtain the password to be scored"
-msgstr "수준을 검사할 비밀번호를 가져올 수 없습니다"
+msgstr "Nu s-a putut obține parola pentru a fi evaluată"
 
 #: src/pwscore.c:75
 #, c-format
@@ -55,211 +52,207 @@ msgid ""
 "Password quality check failed:\n"
 " %s\n"
 msgstr ""
-"비밀번호 수준 검사에 실패했습니다:\n"
-" %s\n"
+"Verificarea calității parolei a eșuat:\n"
+"%s\n"
 
 #: src/pwmake.c:23
 #, c-format
 msgid "Usage: %s <entropy-bits>\n"
-msgstr "사용법: %s <엔트로피-비트>\n"
+msgstr "Utilizare: %s <biți de entropie>\n"
 
 #: src/pwmake.c:58
 #, c-format
 msgid ""
 "Warning: Value %ld is outside of the allowed entropy range, adjusting it.\n"
-msgstr "경고: 값 %ld는 허용된 엔트로피 범위를 초과하였으며, 이를 조정하세요.\n"
+msgstr ""
+"Avertisment: Valoarea %ld este în afara intervalului de entropie permis, "
+"ajustându-l.\n"
 
 #: src/error.c:31
 msgid "Memory allocation error when setting"
-msgstr "설정시 메모리 할당 오류"
+msgstr "Eroare de alocare a memoriei la configurare"
 
 #: src/error.c:35
 msgid "Memory allocation error"
-msgstr "메모리 할당 오류"
+msgstr "Eroare de alocare a memoriei"
 
 #: src/error.c:37
 msgid "The password is the same as the old one"
-msgstr "비밀번호가 이전 것과 동일함"
+msgstr "Parola este aceeași cu cea veche"
 
 #: src/error.c:39
 msgid "The password is a palindrome"
-msgstr "비밀번호가 앞뒤 어느 쪽에서 읽어도 같은 문맥입니다"
+msgstr "Parola este un palindrom"
 
 #: src/error.c:41
 msgid "The password differs with case changes only"
-msgstr "비밀번호는 대소문자로만 바뀌었습니다"
+msgstr "Parola diferă doar prin schimbarea minusculelor/majusculelor"
 
 #: src/error.c:43
 msgid "The password is too similar to the old one"
-msgstr "비밀번호가 이전 것과 너무 비슷합니다"
+msgstr "Parola este prea asemănătoare cu cea veche"
 
 #: src/error.c:45
 msgid "The password contains the user name in some form"
-msgstr "비밀번호에 사용자 이름이 있습니다"
+msgstr "Parola conține de-o anumită manieră numele utilizatorului"
 
 #: src/error.c:47
 msgid "The password contains words from the real name of the user in some form"
-msgstr "비밀번호는 임의의 형태로 사용자의 실제 이름 단어가 있습니다"
+msgstr ""
+"Parola conține cuvinte din numele real al utilizatorului sub o formă oarecare"
 
 #: src/error.c:49
 msgid "The password contains forbidden words in some form"
-msgstr "비밀번호는 어떤 형태로 금지된 단어가 있습니다"
+msgstr "Parola conține cuvinte interzise într-o formă sau alta"
 
 #: src/error.c:52
 #, c-format
 msgid "The password contains less than %ld digits"
-msgstr "비밀번호는 %ld개 미만의 숫자가 있습니다"
+msgstr "Parola conține mai puțin de %ld caractere"
 
 #: src/error.c:55
 msgid "The password contains too few digits"
-msgstr "비밀번호가 너무 적은 자리 수입니다"
+msgstr "Parola conține prea puține caractere"
 
 #: src/error.c:58
 #, c-format
 msgid "The password contains less than %ld uppercase letters"
-msgstr "비밀번호는 %ld개 미만의 대문자가 있습니다"
+msgstr "Parola conține mai puțin de %ld majuscule"
 
 #: src/error.c:61
 msgid "The password contains too few uppercase letters"
-msgstr "비밀번호가 너무 적은 대문자의 개수입니다"
+msgstr "Parola conține prea puține majuscule"
 
 #: src/error.c:64
 #, c-format
 msgid "The password contains less than %ld lowercase letters"
-msgstr "비밀번호는 %ld개 미만의 소문자가 있습니다"
+msgstr "Parola conține mai puțin de %ld litere minuscule"
 
 #: src/error.c:67
 msgid "The password contains too few lowercase letters"
-msgstr "비밀번호는 소문자 개수가 부족합니다"
+msgstr "Parola conține prea puține litere minuscule"
 
 #: src/error.c:70
 #, c-format
 msgid "The password contains less than %ld non-alphanumeric characters"
-msgstr "비밀번호는 영숫자가 아닌 %ld개 미만의 문자가 있습니다"
+msgstr "Parola conține mai puțin de %ld caractere non-alfanumerice"
 
 #: src/error.c:73
 msgid "The password contains too few non-alphanumeric characters"
-msgstr "비밀번호는 너무 적은 비-영숫자 문자가 있습니다"
+msgstr "Parola conține prea puține caractere non-alfanumerice"
 
 #: src/error.c:76
 #, c-format
 msgid "The password is shorter than %ld characters"
-msgstr "비밀번호는 %ld 개의 문자 보다 짧습니다"
+msgstr "Parola este mai scurtă de %ld caractere"
 
 #: src/error.c:79
 msgid "The password is too short"
-msgstr "비밀번호가 너무 짧습니다"
+msgstr "Parola este prea scurtă"
 
 #: src/error.c:81
 msgid "The password is just rotated old one"
-msgstr "비밀번호가 이전 것을 회전 적용하였습니다"
+msgstr "Parola este doar una veche rotită"
 
 #: src/error.c:84
 #, c-format
 msgid "The password contains less than %ld character classes"
-msgstr "비밀번호는 %ld 미만의 문자 계열이 들어있습니다"
+msgstr "Parola conține mai puțin de %ld clase de caractere"
 
 #: src/error.c:87
 msgid "The password does not contain enough character classes"
-msgstr "비밀번호는 다양한 문자 계열을 반영하지 않았습니다"
+msgstr "Parola nu conține suficiente clase de caractere"
 
 #: src/error.c:90
 #, c-format
 msgid "The password contains more than %ld same characters consecutively"
-msgstr "비밀번호는 %ld개 이상의 동일한 연속 문자가 있습니다"
+msgstr "Parola conține mai mult de %ld caractere identice consecutive"
 
 #: src/error.c:93
 msgid "The password contains too many same characters consecutively"
-msgstr "비밀번호는 너무 많은 동일한 연속 문자가 있습니다"
+msgstr "Parola conține prea multe caractere identice consecutive"
 
 #: src/error.c:96
 #, c-format
 msgid ""
 "The password contains more than %ld characters of the same class "
 "consecutively"
-msgstr "비밀번호는 %ld개 이상의 동일한 계열 연속 문자가 있습니다"
+msgstr "Parola conține mai mult de %ld caractere din aceeași clasă consecutive"
 
 #: src/error.c:99
 msgid ""
 "The password contains too many characters of the same class consecutively"
-msgstr "비밀번호는 동일한 계열 문자가 너무 많이 있습니다"
+msgstr "Parola conține prea multe caractere din aceeași clasă consecutiv"
 
 #: src/error.c:102
 #, c-format
 msgid "The password contains monotonic sequence longer than %ld characters"
-msgstr "비밀번호는 %ld자를 초과하는 단조로운 문자열이 있습니다"
+msgstr "Parola conține o secvență monotonă mai lungă de %ld caractere"
 
 #: src/error.c:105
 msgid "The password contains too long of a monotonic character sequence"
-msgstr "비밀번호는 너무 단조로운 문자열이 있습니다"
+msgstr "Parola conține o secvență de caractere monotonă prea lungă"
 
 #: src/error.c:107
 msgid "No password supplied"
-msgstr "비밀번호가 없습니다"
+msgstr "Nu a fost furnizată nicio parolă"
 
 #: src/error.c:109
 msgid "Cannot obtain random numbers from the RNG device"
-msgstr "RNG 장치에서 임의의 숫자를 가져올 수 없습니다"
+msgstr "Nu se pot obține numere aleatorii de la dispozitivul RNG"
 
 #: src/error.c:111
 msgid "Password generation failed - required entropy too low for settings"
-msgstr "비밀번호 생성 실패 - 필요한 엔트로피 값이 너무 작습니다"
+msgstr ""
+"Generarea parolei a eșuat; entropia necesară este prea mică pentru "
+"configurare"
 
 #: src/error.c:114 src/error.c:117
 msgid "The password fails the dictionary check"
-msgstr "비밀번호 사전 검사에 실패했습니다"
+msgstr "Parola nu trece proba „verificarea dicționarului”"
 
 #: src/error.c:120 src/error.c:124
 msgid "Unknown setting"
-msgstr "알 수 없는 설정"
+msgstr "Configurare necunoscută"
 
 #: src/error.c:127
 msgid "Bad integer value of setting"
-msgstr "잘못된 정수 설정 값"
+msgstr "Valoare întreagă greșită a parametrului"
 
 #: src/error.c:131
 msgid "Bad integer value"
-msgstr "잘못된 정수 값"
+msgstr "Valoare întreagă eronată"
 
 #: src/error.c:134
 #, c-format
 msgid "Setting %s is not of integer type"
-msgstr "%s 설정은 정수 형식이 아닙니다"
+msgstr "Valoarea parametrului %s nu este de tip întreg"
 
 #: src/error.c:138
 msgid "Setting is not of integer type"
-msgstr "정수 형식의 설정이 아닙니다"
+msgstr "Valoarea parametrului nu este de tip întreg"
 
 #: src/error.c:141
 #, c-format
 msgid "Setting %s is not of string type"
-msgstr "%s 설정은 문자열 형식이 아닙니다"
+msgstr "Valoarea parametrului %s nu este de tip șir de caractere"
 
 #: src/error.c:145
 msgid "Setting is not of string type"
-msgstr "문자열 형식의 설정이 아닙니다"
+msgstr "Valoarea parametrului nu este de tip șir de caractere"
 
 #: src/error.c:147
 msgid "Opening the configuration file failed"
-msgstr "설정 파일 열기에 실패했습니다"
+msgstr "Deschiderea fișierului de configurare a eșuat"
 
 #: src/error.c:149
 msgid "The configuration file is malformed"
-msgstr "설정 파일이 잘못되었습니다"
+msgstr "Fișierul de configurare este incorect"
 
 #: src/error.c:151
 msgid "Fatal failure"
-msgstr "치명적인 오류가 발생했습니다"
+msgstr "Eșec fatal"
 
 #: src/error.c:153
 msgid "Unknown error"
-msgstr "알 수 없는 오류"
-
-#~ msgid "New %s%spassword: "
-#~ msgstr "새 %s%s 암호:"
-
-#~ msgid "Retype new %s%spassword: "
-#~ msgstr "새 %s%s 암호 재입력:"
-
-#~ msgid "Sorry, passwords do not match."
-#~ msgstr "죄송합니다. 암호가 일치하지 않습니다."
+msgstr "Eroare necunoscută"
